@@ -5,28 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic 8 Ball</title> 
-    <script defer src="js/main.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script> 
+    <script defer src="js/stars.js"></script> 
+    <link rel="stylesheet" href="css/style.css"> 
     
 </head>
 <body>
-    <h1>MAGIC 8 BALL</h1> 
+    <!-- Stars Background --> 
+    <div class="star-bg"></div> 
 
-    <h2>Ask Me Anything!</h2>
+    <div class="container">
+        <!-- Headings --> 
+        <h1>MAGIC 8 BALL</h1> 
 
-    <!-- Input Question and Button -->
-    <div id="input-section">
-        <input type="text" id="question" placeholder="Enter your question here...">
+        <h2>Ask Me Anything!</h2> 
 
-        <button type="button" id="button-1" onclick="ask()">Ask</button>
-    </div>
+        <!-- Input Question and Button --> 
+        <div id="input-section">
+            <input type="text" id="question" placeholder="Enter your question here..."> 
 
-    <!-- Magic 8 Ball -->
-    <div class="outer-circle" id="magic-ball">
-        <div class="inner-circle" id="inner">
-            <p id="eight">8</p>
-            <p id="answer"></p> 
-        </div>        
+            <button type="button" id="button-1" onclick="ask()">Ask</button> 
+        </div> 
+
+        <!-- Magic 8 Ball --> 
+        <div class="outer-circle" id="magic-ball">
+            <div class="inner-circle" id="inner">
+                <p id="eight">8</p> 
+                <p id="answer"></p> 
+            </div>      
+        </div> 
     </div> 
     
 </body>
