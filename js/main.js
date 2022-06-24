@@ -8,24 +8,24 @@ const randomAnswer = Math.floor(Math.random() * 20);  // or  * answers.length  c
 // Button 1 Onclick Function 
 function ask() {
     // Adding Shake Effect 
-    let magicBall = document.getElementById('magic-ball');
+    const magicBall = document.getElementById('magic-ball');
     magicBall.classList.add('shake-effect') 
 
     // Removing Question Input Element 
-    let question = document.getElementById('question');
+    const question = document.getElementById('question');
     question.remove(); 
 
     // Removing Button 1 
     button1.remove(); 
 
     // Creating h3 Element with Inner Text Inside Input Section div
-    let inputDiv = document.getElementById('input-section');
-    let userQuestion = document.createElement('h3'); 
+    const inputDiv = document.getElementById('input-section');
+    const userQuestion = document.createElement('h3'); 
     inputDiv.appendChild(userQuestion); 
     userQuestion.innerText = question.value; 
 
     // Creating Button 2 inside Input Section div 
-    let button2 = document.createElement('button'); 
+    const button2 = document.createElement('button'); 
     inputDiv.appendChild(button2)[1]; 
     button2.type = 'button'; 
     button2.id = 'button-2'; 
@@ -37,25 +37,25 @@ function ask() {
 
     // Removing Number Eight 
     setTimeout(() => {
-        let numberEight = document.getElementById('eight'); 
-        numberEight.textContent = '';  // empty string removes the content or  nunberEight.remove(); 
+        const numberEight = document.getElementById('eight'); 
+        numberEight.textContent = '';  // empty string removes the content or  numberEight.remove(); 
     }, 1000) 
 
     // Getting the Answer
     setTimeout(() => {
-        let answer = document.getElementById('answer'); 
+        const answer = document.getElementById('answer'); 
         answer.innerHTML = answers[randomAnswer]; 
     }, 1500)
 } 
 
 
 // Button 1 Event Listener 
-let button1 = document.getElementById('button-1'); 
+const button1 = document.getElementById('button-1'); 
 
 button1.addEventListener('click', () => {
     // Inner circle answer background color change 
     setTimeout(() => {
-        let newInnerCircle = document.getElementById('inner'); 
+        const newInnerCircle = document.getElementById('inner'); 
         newInnerCircle.style.backgroundColor = 'black'; 
         newInnerCircle.style.border = '10px solid #131419'; 
     }, 1000) 
